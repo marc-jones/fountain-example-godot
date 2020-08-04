@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/Ripple.gd" type="Script" id=1]
+[ext_resource path="res://assets/ripple1.png" type="Texture" id=2]
+[ext_resource path="res://assets/ripple3.png" type="Texture" id=3]
+[ext_resource path="res://assets/ripple2.png" type="Texture" id=4]
+[ext_resource path="res://assets/fountain.png" type="Texture" id=5]
+[ext_resource path="res://scripts/Fountain.gd" type="Script" id=6]
+
+[node name="Main" type="Node2D"]
+
+[node name="Fountain" type="Sprite" parent="."]
+position = Vector2( 197.09, 106.722 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+
+[node name="R1" type="Sprite" parent="Fountain"]
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+
+[node name="R2" type="Sprite" parent="Fountain"]
+texture = ExtResource( 4 )
+script = ExtResource( 1 )
+
+[node name="R3" type="Sprite" parent="Fountain"]
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
